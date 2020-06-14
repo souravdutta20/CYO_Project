@@ -9,7 +9,10 @@ if(!require(e1071)) install.packages("e1071", repos = "http://cran.us.r-project.
 if(!require(Rborist)) install.packages("Rborist", repos = "http://cran.us.r-project.org")
 if(!require(randomForest)) install.packages("randomForest", repos = "http://cran.us.r-project.org")
 
-Bank_data<-read.csv("~/Downloads/Bank_Personal_Loan_Modelling.csv")
+download.file("https://raw.githubusercontent.com/souravdutta20/CYO_Project/master/Bank_Personal_Loan_Modelling.csv","Bank_Personal_Loan_Modelling.csv")
+
+Bank_data<- read.csv("Bank_Personal_Loan_Modelling.csv")
+
  head(Bank_data)
 
 # Check observation & Variables 
